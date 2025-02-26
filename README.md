@@ -37,5 +37,8 @@
 
 
 
+
 ### Contributing
 Contributions are welcome! Please feel free to submit pull requests.
+
+Thank you / Merci /Sahitu
