@@ -12,4 +12,14 @@ class BooksController extends Controller
         $books = Book::all();
         return view('welcome', ['books' => $books]);
     }
+    public function show($id)
+    {
+        $book = Book::findOrFail($id);
+        if (!$book) {
+            return response()->json([
+                'message' => 'Book not found'
+            ], 404);
+        }
+        return view('books.index', ['book' => $book]);
+    }
 }

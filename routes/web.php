@@ -3,8 +3,11 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\BooksController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CategorieController;
 
-Route::get('/',[BooksController::class, 'index']);
+Route::get('/book/{$id}', [BooksController::class, 'show'])->name('books.index');
+Route::get('/',[BooksController::class, 'index'])->name('Uamob Library');
+Route::get('/categories', [CategorieController::class, 'index'])->name('categories.index');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
