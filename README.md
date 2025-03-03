@@ -1,5 +1,5 @@
 # Book Management System
-## Initial Release - v1.0.0
+## Release - v1.0.1
 
 ### Features
 - User Authentication System
@@ -11,6 +11,8 @@
     - Display books catalog
     - Book details viewing
     - Search functionality
+    - add book from dashboard
+    
 
 ### Author
 - Oualid Hamri
